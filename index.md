@@ -30,5 +30,25 @@ work together. This way the communication flows in a natural way and it is more 
 being built ends up being very much better aligned with the original idea, the idea that would have been built the 
 business experts if they were developers.
 
+
+## What DDD exactly means
+
+Domain Driven Design. The domain, though later I will explain it in detail, basically is the business itself, so when we 
+talk about DDD we are talking about software design guided by the business or the business idea.
+DDD talks about both technical implementations and business strategy. It doesn't only talks about architecture but also 
+about company philosophy, a way to organize and a way to do. It is oriented to work with small, agile and autonomous teams.
+Teams must be permanently connected with the business experts, as well as very involved in obtaining and discovering 
+knowledge about the business.
+DDD involves then all the organization, if the company it is not aligned with this approach DDD cannot be applied. In our 
+day to day, as good professionals we are, we try to write code that has no errors, we apply best practices, design patterns 
+when they make sense, we implement new features doing pair programming, we add unit, integration and behaviour tests in 
+our projects in order to guarantee the quality of our work... Nevertheless this high quality code can not being reflecting 
+faithfully the idea for what it was created. If this is so it will not be considered a good solution since it will not be useful. A high quality software besides being very well crafted must reflect the business idea for what it was ordered.
+On the other hand implementing DDD is expensive. Implies expending lots of resources and efforts in building the projects 
+where this approach is used. It has not being thought for developing all systems with this approach, but for developing 
+those systems that are the business core, those systems that are expected to obtain more benefit, in the end those who are 
+the heart of the business, and build a very high quality software for them.
+
+
  
  
