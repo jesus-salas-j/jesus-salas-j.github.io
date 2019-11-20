@@ -1,5 +1,3 @@
-# Strategic DDD
-
 ## Introduction
 
 I have based this article in the Vaughn Vernon book titled "Implementing Domain Driven Design". At the time of writing this
@@ -31,7 +29,7 @@ being built ends up being very much better aligned with the original idea, the i
 business experts if they were developers.
 
 
-## What DDD exactly means
+## What does DDD exactly means
 
 Domain Driven Design. The domain, though later I will explain it in detail, basically is the business itself, so when we 
 talk about DDD we are talking about software design guided by the business or the business idea.
@@ -50,5 +48,23 @@ those systems that are the business core, those systems that are expected to obt
 the heart of the business, and build a very high quality software for them.
 
 
+## DDD in the company I am currenly working
+
+In the company I am now working in a conscious or unconscious way we are using some DDD practices. We have more or less 
+small teams oriented to specific missions and at least a member of every team is a business expert, the Product Owner.
+This situation makes easier to the team to be continually connected with the business. The other members of the team 
+must not take for granted that the product owner to be able to answer all the questions about the business, he or she 
+simply can't know everything. It is a responability of the entire team to understand and discover the business. Obviously 
+the product owner will do most of this task since he is the nexus between the rest of the tem and the stakeholders.
+Anyway this not frees the other team members to disregard or not want to understand and discover the business. It does not 
+exists no product owner, no manager, no CEO, nobody that knows absolutely all things about the business. Everyone has to 
+contribute to discover the business through the dialogue, discussions, debates and so on.
+On the other hand all of us also apply some things of DDD in our developments. As we have product owners in our teams, we 
+are continuosly talking with them using the same language that they use, the business language. This language is the one 
+the business experts use between them and with the stakeholders, and we use them in our code. We name the classes and 
+methods in our code using this language in a natural way. In fact there would not be translations between the natural 
+business language and the language used in the code we write. Even so, though we make use of some things that are aligned 
+with DDD, there is a lot of work to do yet.
  
+
  
