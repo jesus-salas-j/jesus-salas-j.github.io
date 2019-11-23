@@ -5,9 +5,9 @@ article I have to recognize that I am not an expert in DDD so it is probably tha
 questions about Strategic DDD. It is a complex subject and I have needed to read several times some of the chapters in the book 
 to understand the large amount of concepts that are explained there. Many of the concepts are quite abstract and although the 
 book contains some examples it has been difficult for me to think how these concepts could fit in the projects I am currenly 
-working on.  
+working on.<br/><br/>
 Nevertheless I am going to do my best in explaining the main concepts in a simple way and provide some more examples that 
-those provided by the book so you can achieve a better understanding.  
+those provided by the book so you can achieve a better understanding.<br/><br/>
 Before reading the Vernon's book I had read lots of articles in internet about DDD, forum discussions, youtube videos, and 
 more. Until I read the book I didn't quite understand exactly what DDD was, the information I found sometimes was confusing 
 and other times contradictory. I understood it as a one more architecture, a kind of extended hexagonal architecture, but 
@@ -17,7 +17,7 @@ as we are going to see next it is much more than that.
 
 In this article I am going to explain only one part of DDD, what is called strategic DDD. This part is explained in the 
 three first chapters of Vernon's book. This part of DDD neither talk about code, nor about message brokers, nor about 
-databases, nor about events... It talks exclusively about business.  
+databases, nor about events... It talks exclusively about business.<br/><br/>
 Strategic DDD explains how to carry out a strategy for building software systems that are closer to business ideas. Many times 
 developers are or have been very far from the business experts, or these experts try to convey an idea to the developer 
 teams but then the software that it is built is quite different than the original idea and it can even lose the essence 
@@ -36,7 +36,7 @@ talk about DDD we are talking about software design guided by the business or th
 DDD talks about both technical implementations and business strategy. It doesn't only talks about architecture but also 
 about company philosophy, a way to organize and a way to do. It is oriented to work with small, agile and autonomous teams.
 Teams must be permanently connected with the business experts, as well as very involved in obtaining and discovering 
-knowledge about the business.  
+knowledge about the business.<br/><br/>
 DDD involves then all the organization, if the company it is not aligned with this approach DDD cannot be applied. In our 
 day to day, as good professionals we are, we try to write code that has no errors, we apply best practices, design patterns 
 when they make sense, we implement new features doing pair programming, we add unit, integration and behaviour tests in 
@@ -58,7 +58,7 @@ simply can't know everything. It is a responability of the entire team to unders
 the product owner will do most of this task since he is the nexus between the rest of the tem and the stakeholders.
 Anyway this not frees the other team members to disregard or not want to understand and discover the business. It does not 
 exists no product owner, no manager, no CEO, nobody that knows absolutely all things about the business. Everyone has to 
-contribute to discover the business through the dialogue, discussions, debates and so on.  
+contribute to discover the business through the dialogue, discussions, debates and so on.<br/><br/>
 On the other hand all of us also apply some things of DDD in our developments. As we have product owners in our teams, we 
 are continuosly talking with them using the same language that they use, the business language. This language is the one 
 the business experts use between them and with the stakeholders, and we use them in our code. We name the classes and 
