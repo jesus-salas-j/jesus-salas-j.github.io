@@ -65,6 +65,52 @@ the business experts use between them and with the stakeholders, and we use them
 methods in our code using this language in a natural way. In fact there would not be translations between the natural 
 business language and the language used in the code we write. Even so, though we make use of some things that are aligned 
 with DDD, there is a lot of work to do yet.
+
+
+## Main concepts
+
+### Domain
+
+It refers to the entire business itself, the whole organization, its employees and processes. It is the what and the how of doing things in the business.
+
+### Subdomain 
+
+It is a single part of the business. In many articles and books, and in the developers community you will find that subdomains are commonly called domains. It is accepted talking about subdomains as domains, Vernon himself accepts this naming alghough he refers to them as subdomains in the entire book. Only you need to bear in mind this double meaning when you read about Strategic DDD and know the context of the reading and understand if it is refering to the domain meaning or subdomain meaning when it uses the term domain.
+
+### Core domain
+
+It is the most important subdomain for the business, its essence. The company will put focus on it, it is of primary importance for the business. Most and best resources, humans and technicals, will be used to build and maintain necessary systems under the scope of this subdomain. It is the part where things need to be done with the highest quality. The core domain can change over time. The business is continuosly changing so in few months years the main scope of the business can change, so it will change also the core domain scope.
+
+### Generic and supporting subdomains
+
+A generic subdomain is that one that it is required for the whole business but not as important as the Core Domain. It can be purchased to a third party instead of being developed by the company.  
+A supporting subdomain is that one that is essential for the business but not the most important, so it neither needs the best efforst nor the best quality.
+
+### Ubiquous language
+
+It is a linguistic bounday and alignment between the bounded context and the business experts. It it not an universal language, it is only valid inside its context.  
+A single word can have two differents meanings depending on what context is being used. We need to know what context are we refering when using a specific word.  
+For example inside a company a customer can have different meanings depending of the department where the word is used. In a department that maintains for example a backoffice where the customers can manage their products a customer will be someone that logs in the backoffice and works with it. For the other hand in the billing department quite surely a customer is someone to bill. So a single customer for the billing department could be related with several customers for the backoffice maintainer department because it could exists a single payer for several backoffice users (for example the commercials of a business). The opposite scenario could also exist. A business that haves a single backoffice user but he wants its billings to be split in several billings with several different names, maybe splitted by geographical business areas.
+
+### Bounded context
+
+Is is one of the most missunderstood concepts in DDD. You will find many reading that explain it in different ways so it is easy to make of it a wrong idea.  
+It is a conceptual boundary when a model can be applied, it provides a context for a specific ubiquous language that is spoken by the team and expressed in its carefully designed software model.
+
+### Domain model
+
+It is a model used in a single bounded context. It must be never a huge model for the whole business, it must be the opposite, a relative small and specific well crafted model only useful for a single bounded context. It needs to reflect perfectly the concepts and behaviours provided by the bounded context in where it will be applied.
+
+
+
+
+
+
+
+
+
+
+
  
 
  
