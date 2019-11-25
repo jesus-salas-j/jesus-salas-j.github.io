@@ -1,3 +1,4 @@
+<br/><br/>
 ## Introduction
 
 I have based this article in the Vaughn Vernon book titled "Implementing Domain Driven Design". At the time of writing this
@@ -13,6 +14,7 @@ more. Until I read the book I didn't quite understand exactly what DDD was, the 
 and other times contradictory. I understood it as a one more architecture, a kind of extended hexagonal architecture, but 
 as we are going to see next it is much more than that.
 
+<br/><br/><br/>
 ## Strategic DDD
 
 In this article I am going to explain only one part of DDD, what is called strategic DDD. This part is explained in the 
@@ -28,7 +30,7 @@ work together. This way the communication flows in a natural way and it is more 
 being built ends up being very much better aligned with the original idea, the idea that would have been built the 
 business experts if they were developers.
 
-
+<br/><br/><br/>
 ## What does DDD exactly means
 
 Domain Driven Design. The domain, though later I will explain it in detail, basically is the business itself, so when we 
@@ -47,7 +49,7 @@ where this approach is used. It has not being thought for developing all systems
 those systems that are the business core, those systems that are expected to obtain more benefit, in the end those who are 
 the heart of the business, and build a very high quality software for them.
 
-
+<br/><br/><br/>
 ## DDD in the company I am currenly working
 
 In the company I am now working in a conscious or unconscious way we are using some DDD practices. We have more or less 
@@ -66,7 +68,7 @@ methods in our code using this language in a natural way. In fact there would no
 business language and the language used in the code we write. Even so, though we make use of some things that are aligned 
 with DDD, there is a lot of work to do yet.
 
-
+<br/><br/><br/>
 ## Main concepts
 
 ### Domain
@@ -94,12 +96,14 @@ For example inside a company a customer can have different meanings depending of
 
 ### Bounded context
 
-Is is one of the most missunderstood concepts in DDD. You will find many reading that explain it in different ways so it is easy to make of it a wrong idea.  
-It is a conceptual boundary when a model can be applied, it provides a context for a specific ubiquous language that is spoken by the team and expressed in its carefully designed software model.
+Is is one of the most missunderstood concepts in DDD. You will find many reading that explain it in different ways and as it is an abstract term it is difficult to understand so it is easy to make a wrong idea of what it exactly means.  
+It is a conceptual boundary when a model can be applied, it provides a context for a specific ubiquous language that is spoken by the team and expressed in its carefully designed software model.  
+It is not necessary that a subdomain has a single bounded context, although it is the desired scenario. A subdomain that contains multiple bounded contexts can lead (although not strictly necessary) to duplication in processes and/or software. In this scenario things that are conceptually the same are being called and understood in different ways, that is why some processes and software solutions can be performing the same things with different names. In this situation can also exist a confusing language. Different words and expressions are being used for the same concepts so this situation difficulties the communication through the company.  
+On the other hand we could find a single bounded context used for several subdomains. This situation leads to excessive generalism. It is the opposite of the previous scenario, same vocabulary is being used for different things and employees are not able no differenciate in which context they are using them.
 
 ### Domain model
 
-It is a model used in a single bounded context. It must be never a huge model for the whole business, it must be the opposite, a relative small and specific well crafted model only useful for a single bounded context. It needs to reflect perfectly the concepts and behaviours provided by the bounded context in where it will be applied.
+It is a model used in a single bounded context. It must be never a huge model for the whole business, it must be the opposite, a relative small and specific well crafted model only useful for a single bounded context. It needs to reflect perfectly the concepts and behaviours provided by the bounded context in where it will be applied. This generalism leads in a natural way to build a too complex model since it is required to support all scenarios. This complex model leads to difficulties to scale our systems since they are too big.
 
 
 
