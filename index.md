@@ -1,13 +1,13 @@
 <br/><br/>
 ## Introduction
 
-I have based this article in the Vaughn Vernon book titled "Implementing Domain Driven Design". At the time of writing this
+I have based this article on the Vaughn Vernon book titled "Implementing Domain Driven Design". At the time of writing this
 article I have to recognize that I am not an expert in DDD so it is probably that this content doesn't answer all your 
-questions about Strategic DDD. It is a complex subject and I have needed to read several times some of the chapters in the book 
+questions about Strategic DDD although I wish it can help you in your undestanding of this approach. It is a complex subject and I have needed to read several times some of the chapters in the book 
 to understand the large amount of concepts that are explained there. Many of the concepts are quite abstract and although the 
 book contains some examples it has been difficult for me to think how these concepts could fit in the projects I am currenly 
 working on.<br/><br/>
-Nevertheless I am going to do my best in explaining the main concepts in a simple way and provide some more examples that 
+Nevertheless I am going to do my best in explaining the main concepts in the simplest possible way and provide some more examples that 
 those provided by the book so you can achieve a better understanding.<br/><br/>
 Before reading the Vernon's book I had read lots of articles in internet about DDD, forum discussions, youtube videos, and 
 more. Until I read the book I didn't quite understand exactly what DDD was, the information I found sometimes was confusing 
@@ -22,16 +22,21 @@ three first chapters of Vernon's book. This part of DDD neither talk about code,
 databases, nor about events... It talks exclusively about business.<br/><br/>
 Strategic DDD explains how to carry out a strategy for building software systems that are closer to business ideas. Many times 
 developers are or have been very far from the business experts, or these experts try to convey an idea to the developer 
-teams but then the software that it is built is quite different than the original idea and it can even lose the essence 
+teams but then the software that is built is quite different than the original idea and it can even lose the essence 
 of that idea. Moreover many developer teams tend to build software systems that are difficult to change and in a world 
 that evolves very fast and it is continuosly changing these systems doesn't have the necessary flexibility to allow 
-fast changes and adaptation. The DDD approach is based in bring near the developers and the business experts so they 
-work together. This way the communication flows in a natural way and it is more likely that the software that it is 
+fast changes and adaptation. The DDD approach is based in bringing near the developers and the business experts so they 
+work together. This way the communication flows in a natural way and it is more likely that the software that is 
 being built ends up being very much better aligned with the original idea, the idea that would have been built the 
 business experts if they were developers.
 
 <br/><br/><br/>
-## What does DDD exactly means
+## A brief explanation of Tactical DDD
+
+This part of DDD is related to code. It explains how we can craft small and specific models for a software that will be built for a specific area of the company. It details how to build these models in a smart way so they end reflecting faithfully the business. The idea is to achieve building high quality models, running away from bad practices and anemic models. With these excellently well crafted models we will be able later to build a high quality software system around them.
+
+<br/><br/><br/>
+## What does DDD exactly mean
 
 Domain Driven Design. The domain, though later I will explain it in detail, basically is the business itself, so when we 
 talk about DDD we are talking about software design guided by the business or the business idea.
@@ -52,18 +57,18 @@ the heart of the business, and build a very high quality software for them.
 <br/><br/><br/>
 ## DDD in the company I am currenly working
 
-In the company I am now working in a conscious or unconscious way we are using some DDD practices. We have more or less 
+In the company I am now working in a conscious or unconscious way we are using some DDD practices. We have relatively 
 small teams oriented to specific missions and at least a member of every team is a business expert, the Product Owner.
 This situation makes easier to the team to be continually connected with the business. The other members of the team 
-must not take for granted that the product owner to be able to answer all the questions about the business, he or she 
+must not take for granted that the product owner is going to be able to answer all the questions about the business, he or she 
 simply can't know everything. It is a responability of the entire team to understand and discover the business. Obviously 
-the product owner will do most of this task since he is the nexus between the rest of the tem and the stakeholders.
+the product owner will do most of this task since he is the nexus between the rest of the team and the stakeholders.
 Anyway this not frees the other team members to disregard or not want to understand and discover the business. It does not 
 exists no product owner, no manager, no CEO, nobody that knows absolutely all things about the business. Everyone has to 
 contribute to discover the business through the dialogue, discussions, debates and so on.<br/><br/>
 On the other hand all of us also apply some things of DDD in our developments. As we have product owners in our teams, we 
 are continuosly talking with them using the same language that they use, the business language. This language is the one 
-the business experts use between them and with the stakeholders, and we use them in our code. We name the classes and 
+the business experts use between them and with the stakeholders, so we use it in our code. We name the classes and 
 methods in our code using this language in a natural way. In fact there would not be translations between the natural 
 business language and the language used in the code we write. Even so, though we make use of some things that are aligned 
 with DDD, there is a lot of work to do yet.
@@ -77,22 +82,16 @@ It refers to the entire business itself, the whole organization, its employees a
 
 ### Subdomain 
 
-It is a single part of the business. In many articles and books, and in the developers community you will find that subdomains are commonly called domains. It is accepted talking about subdomains as domains, Vernon himself accepts this naming alghough he refers to them as subdomains in the entire book. Only you need to bear in mind this double meaning when you read about Strategic DDD and know the context of the reading and understand if it is refering to the domain meaning or subdomain meaning when it uses the term domain.
+It is a single part of the business. In many articles and books, and in the developers community you will find that subdomains are commonly called domains. It is accepted talking about subdomains as domains, Vernon himself accepts this naming alghough he refers to them as subdomains in the entire book. Only you need to bear in mind this double meaning when you read about Strategic DDD and know the context of the reading and understand if it is refering to the domain meaning or subdomain meaning where the term domain is used.
 
 ### Core domain
 
-It is the most important subdomain for the business, its essence. The company will put focus on it, it is of primary importance for the business. Most and best resources, humans and technicals, will be used to build and maintain necessary systems under the scope of this subdomain. It is the part where things need to be done with the highest quality. The core domain can change over time. The business is continuosly changing so in few months years the main scope of the business can change, so it will change also the core domain scope.
+It is the most important subdomain for the business, its essence. The company will put focus on it, it is of primary importance for the business. Most and best resources, humans and technicals, will be used to build and maintain necessary systems under the scope of this subdomain. It is the part where things need to be done with the highest quality. The core domain can change over time. The business is continuosly changing so in few months or years the main scope of the business can change, so it will change also which is the new core domain.
 
 ### Generic and supporting subdomains
 
 A generic subdomain is that one that it is required for the whole business but not as important as the Core Domain. It can be purchased to a third party instead of being developed by the company.  
-A supporting subdomain is that one that is essential for the business but not the most important, so it neither needs the best efforst nor the best quality.
-
-### Ubiquous language
-
-It is a linguistic bounday and alignment between the bounded context and the business experts. It it not an universal language, it is only valid inside its context.  
-A single word can have two differents meanings depending on what context is being used. We need to know what context are we refering when using a specific word.  
-For example inside a company a customer can have different meanings depending of the department where the word is used. In a department that maintains for example a backoffice where the customers can manage their products a customer will be someone that logs in the backoffice and works with it. For the other hand in the billing department quite surely a customer is someone to bill. So a single customer for the billing department could be related with several customers for the backoffice maintainer department because it could exists a single payer for several backoffice users (for example the commercials of a business). The opposite scenario could also exist. A business that haves a single backoffice user but he wants its billings to be split in several billings with several different names, maybe splitted by geographical business areas.
+A supporting subdomain is that one that is essential for the business but not the most important, so it neither needs the best efforts nor the best quality.
 
 ### Bounded context
 
@@ -100,6 +99,12 @@ Is is one of the most missunderstood concepts in DDD. You will find many reading
 It is a conceptual boundary when a model can be applied, it provides a context for a specific ubiquous language that is spoken by the team and expressed in its carefully designed software model.  
 It is not necessary that a subdomain has a single bounded context, although it is the desired scenario. A subdomain that contains multiple bounded contexts can lead (although not strictly necessary) to duplication in processes and/or software. In this scenario things that are conceptually the same are being called and understood in different ways, that is why some processes and software solutions can be performing the same things with different names. In this situation can also exist a confusing language. Different words and expressions are being used for the same concepts so this situation difficulties the communication through the company.  
 On the other hand we could find a single bounded context used for several subdomains. This situation leads to excessive generalism. It is the opposite of the previous scenario, same vocabulary is being used for different things and employees are not able no differenciate in which context they are using them.
+
+### Ubiquous language
+
+It is a linguistic bounday and alignment between the bounded context and the business experts. It it not an universal language, it is only valid inside its context.  
+A single word can have two differents meanings depending on what context is being used. We need to know what context are we refering when using a specific word.  
+For example inside a company a customer can have different meanings depending of the department where the word is used. In a department that maintains for example a backoffice where the customers can manage their products a customer will be someone that logs in the backoffice and works with it. For the other hand in the billing department quite surely a customer is someone to bill. So a single customer for the billing department could be related with several customers for the backoffice maintainer department because it could exists a single payer for several backoffice users (for example the commercials of a business). The opposite scenario could also exist. A business that haves a single backoffice user but he wants its billings to be split in several billings with several different names, maybe splitted by geographical business areas.
 
 ### Domain model
 
