@@ -73,7 +73,7 @@ business experts if they were developers.
 ## A brief explanation of Tactical DDD
 
 Explaining Tactical DDD is not the aim of this article, it is a very extensive topic so I will simply mention it in a very briefly way.  
-Tactical DDD is related to code and building software systems. It explains how we can craft small and specific models for a software that will be built for a specific area of the company. It details patterns and best practices to build these models in a smart way so they end reflecting faithfully the business. The idea is to achieve building rich and high quality models, running away from bad practices and anemic models. Moreover these models must be easy to adapt to new scenarios and business changes and easy to maintain. With these excellently well crafted models we will be able later to build a high quality software system around them.  
+Tactical DDD is related to code and building high quality software systems. It explains how we can craft small and specific models for a software that will be built for a specific area of the company. It details patterns and best practices to build these models in a smart way so they end reflecting faithfully the business. The idea is to run away from bad practices and anemic models. Moreover these models must be easy to adapt to new scenarios and business changes and easy to maintain. With these excellently well crafted models we will be able later to build a high quality software system around them.  
 This part of DDD also explains how to integrate these models and build efficient communication methods between them in order to be able to build, evolve and maintain large high quality software systems.
 
 <br/><br/><br/>
