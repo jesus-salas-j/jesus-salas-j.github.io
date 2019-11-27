@@ -14,29 +14,9 @@ more. Until I read the book I didn't quite understand exactly what DDD was, the 
 and other times contradictory. I understood it as a one more architecture, a kind of extended hexagonal architecture, but 
 as we are going to see next it is much more than that.
 
-<br/><br/><br/>
-## Strategic DDD
-
-In this article I am going to explain only one part of DDD, what is called strategic DDD. This part is explained in the 
-three first chapters of Vernon's book. This part of DDD neither talk about code, nor about message brokers, nor about 
-databases, nor about events... It talks exclusively about business.<br/><br/>
-Strategic DDD explains how to carry out a strategy for building software systems that are closer to business ideas. Many times 
-developers are or have been very far from the business experts, or these experts try to convey an idea to the developer 
-teams but then the software that is built is quite different than the original idea and it can even lose the essence 
-of that idea. Moreover many developer teams tend to build software systems that are difficult to change and in a world 
-that evolves very fast and it is continuosly changing these systems doesn't have the necessary flexibility to allow 
-fast changes and adaptation. The DDD approach is based in bringing near the developers and the business experts so they 
-work together. This way the communication flows in a natural way and it is more likely that the software that is 
-being built ends up being very much better aligned with the original idea, the idea that would have been built the 
-business experts if they were developers.
 
 <br/><br/><br/>
-## A brief explanation of Tactical DDD
-
-This part of DDD is related to code. It explains how we can craft small and specific models for a software that will be built for a specific area of the company. It details how to build these models in a smart way so they end reflecting faithfully the business. The idea is to achieve building high quality models, running away from bad practices and anemic models. With these excellently well crafted models we will be able later to build a high quality software system around them.
-
-<br/><br/><br/>
-## What does DDD exactly mean
+## What does DDD mean
 
 Domain Driven Design. The domain, though later I will explain it in detail, basically is the business itself, so when we 
 talk about DDD we are talking about software design guided by the business or the business idea.
@@ -72,6 +52,27 @@ the business experts use between them and with the stakeholders, so we use it in
 methods in our code using this language in a natural way. In fact there would not be translations between the natural 
 business language and the language used in the code we write. Even so, though we make use of some things that are aligned 
 with DDD, there is a lot of work to do yet.
+
+<br/><br/><br/>
+## Strategic DDD
+
+In this article I am going to explain only one part of DDD, what is called strategic DDD. This part is explained in the 
+three first chapters of Vernon's book. This part of DDD neither talk about code, nor about message brokers, nor about 
+databases, nor about events... It talks exclusively about business.<br/><br/>
+Strategic DDD explains how to carry out a strategy for building software systems that are closer to business ideas. Many times 
+developers are or have been very far from the business experts, or these experts try to convey an idea to the developer 
+teams but then the software that is built is quite different than the original idea and it can even lose the essence 
+of that idea. Moreover many developer teams tend to build software systems that are difficult to change and in a world 
+that evolves very fast and it is continuosly changing these systems doesn't have the necessary flexibility to allow 
+fast changes and adaptation. The DDD approach is based in bringing near the developers and the business experts so they 
+work together. This way the communication flows in a natural way and it is more likely that the software that is 
+being built ends up being very much better aligned with the original idea, the idea that would have been built the 
+business experts if they were developers.
+
+<br/><br/><br/>
+## A brief explanation of Tactical DDD
+
+This part of DDD is related to code. It explains how we can craft small and specific models for a software that will be built for a specific area of the company. It details how to build these models in a smart way so they end reflecting faithfully the business. The idea is to achieve building rich and high quality models, running away from bad practices and anemic models. With these excellently well crafted models we will be able later to build a high quality software system around them.
 
 <br/><br/><br/>
 ## Main concepts
