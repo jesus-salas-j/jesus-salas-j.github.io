@@ -92,7 +92,7 @@ It is the most important subdomain for the business, its essence. The company wi
 
 ### Generic and supporting subdomains
 
-A generic subdomain is that one that it is required for the whole business but not as important as the Core Domain. It can be purchased to a third party instead of being developed by the company.  
+A generic subdomain is that one that it is required for the whole business but not as important as other subdomains. It can be purchased to a third party instead of being developed by the company.  
 A supporting subdomain is that one that is essential for the business but not the most important, so it neither needs the best efforts nor the best quality.
 
 ### Ubiquous language
