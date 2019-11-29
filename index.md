@@ -109,7 +109,7 @@ It is not necessary that a subdomain has a single bounded context, although it i
 
 ### Domain model
 
-It is a model used in a single bounded context. It must be never a huge model for the whole business, it must be the opposite, a relative small and specific well crafted model only useful for a single bounded context. It needs to reflect perfectly the concepts and behaviours provided by the bounded context in where it will be applied. This generalism leads in a natural way to build a too complex model since it is required to support all scenarios. This complex model leads to difficulties to scale our systems since they are too big.
+It is a model used in a single bounded context. It must be never a huge model for the whole business, it must be the opposite, a relative small and specific well crafted model only useful for a single bounded context. It needs to reflect perfectly the concepts and behaviours provided by the bounded context in where it will be applied. It avoids generalism since generalism leads in a natural way to build a too complex model since it is required to support all scenarios. Complex models lead to difficulties to scale and evolve our systems.
 
 <br/><br/><br/>
 ## Study cases
