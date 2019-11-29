@@ -92,25 +92,24 @@ It is the most important subdomain for the business, its essence. The company wi
 
 ### Generic and supporting subdomains
 
-A generic subdomain is that one that it is required for the whole business but not as important as the Core Domain. It can be purchased to a third party instead of being developed by the company.  
+A generic subdomain is that one that it is required for the whole business but not as important as other subdomains. It can be purchased to a third party instead of being developed by the company.  
 A supporting subdomain is that one that is essential for the business but not the most important, so it neither needs the best efforts nor the best quality.
 
 ### Ubiquous language
 
-It is a linguistic boundary and alignment between the team and the business experts. It it not an universal language, it is only valid inside its context.  
-A single word can have two differents meanings depending on what context is being used. We need to know what context are we refering when using a specific word.  
-For example inside a company a customer can have different meanings depending of the department where the word is used. In a department that maintains for example a backoffice where the customers can manage their products a customer will be someone that logs in the backoffice and works with it. For the other hand in the billing department quite surely a customer is someone to bill. So a single customer for the billing department could be related with several customers for the backoffice maintainer department because it could exists a single payer for several backoffice users (for example the commercials of a business). The opposite scenario could also exist. A business that haves a single backoffice user but he wants its billings to be split in several billings with several different names, maybe splitted by geographical business areas.
+It is a linguistic boundary and alignment between the team and the business experts. It is not an universal language and it is only valid inside its context.  
+A single word can have several differents meanings depending on what context is being used. We need to know what context are we refering when using a specific word.  
+For example in a company the customer concept can have different meanings depending of the department where the word is used. In a department that maintains for example a backoffice where customers can manage their purchased products, a customer will be someone that logs in the backoffice and works with it. On the other hand in the billing department quite surely a customer is someone to bill. So a single customer for the billing department could be related with several customers for the backoffice maintainer department because it could exists a single payer for several backoffice users (for example commercials of a business). The opposite scenario could also exist. A business that haves a single backoffice user but he wants its billings to be split in several billings with different names, maybe splitted by geographical business areas.
 
 ### Bounded context
 
 Is is one of the most missunderstood concepts in DDD. You will find many reading that explain it in different ways and as it is an abstract term it is difficult to understand so it is easy to make a wrong idea of what it exactly means.  
 It is a conceptual boundary when a model can be applied, it provides a context for a specific ubiquous language that is spoken by the team and expressed in its carefully designed software model.  
-It is not necessary that a subdomain has a single bounded context, although it is the desired scenario. A subdomain that contains multiple bounded contexts can lead (although not strictly necessary) to duplication in processes and/or software. In this scenario things that are conceptually the same are being called and understood in different ways, that is why some processes and software solutions can be performing the same things with different names. In this situation can also exist a confusing language. Different words and expressions are being used for the same concepts so this situation difficulties the communication through the company.  
-On the other hand we could find a single bounded context used for several subdomains. This situation leads to excessive generalism. It is the opposite of the previous scenario, same vocabulary is being used for different things and employees are not able no differenciate in which context they are using them.
+It is not necessary that a subdomain has a single bounded context, although it is the desired scenario. 
 
 ### Domain model
 
-It is a model used in a single bounded context. It must be never a huge model for the whole business, it must be the opposite, a relative small and specific well crafted model only useful for a single bounded context. It needs to reflect perfectly the concepts and behaviours provided by the bounded context in where it will be applied. This generalism leads in a natural way to build a too complex model since it is required to support all scenarios. This complex model leads to difficulties to scale our systems since they are too big.
+It is a model used in a single bounded context. It must be never a huge model for the whole business, it must be the opposite, a relative small and specific well crafted model only useful for a single bounded context. It needs to reflect perfectly the concepts and behaviours provided by the bounded context in where it will be applied. It avoids generalism since generalism leads in a natural way to build a too complex model since it is required to support all scenarios. Complex models lead to difficulties to scale and evolve our systems.
 
 <br/><br/><br/>
 ## Study cases
@@ -118,11 +117,12 @@ It is a model used in a single bounded context. It must be never a huge model fo
 ### Scenario: Single subdomain with multiple bounded contexts
 
 The ideal scenario would be to achieve a relation 1:1 between subdomains and bounded contexts. But this is not always possible since in a company we have to deal with legacy systems, third party tools, customized processes and tens of different scenarios. Moreover a single subdomain with multiple bounded contexts it not necessary a bad situation, it depends of the business.<br/><br/>
-Anyway this scenario can lead us in many cases to undesirable situations as the need of maintaining duplicated processes, and maybe duplicated software systems that are performing things that are conceptually the same but resolved or handled in different ways by different teams or departments. Also this scenario can lead us to have across the company a confusing language, concepts that although represent the same idea are named different by different teams and departments across the company.
+Anyway this scenario can lead us in many cases to undesirable situations as the need of maintaining duplicated processes, and maybe duplicated software systems that are performing things that are conceptually the same but resolved or handled in different ways by different teams or departments. Also this scenario can lead to have a confusing language across the company, concepts that although represent the same idea are named different by different teams and departments. This situation difficulties communication through the company.
 
 ### Scenario: Single bounded context for several subdomains
 
 This scenario leads our systems to be too generalists, having huge and complex models that must be applied and must fit in many cases. This situation makes software systems difficult to scale and evolve. It also limits the team's autonomy and creates too many dependencies, so the systems that are in this scenario are less flexible to change.
+It is the opposite of the previous scenario, same vocabulary is being used for different things and employees are not able no differenciate in which context they are using each term.
 
 
 
